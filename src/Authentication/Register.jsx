@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { useContext, useState } from "react";
 import { FaGithub, FaGoogle } from "react-icons/fa";
-// import axiosPublic from "../components/axiosPublic"; // Adjust the path if needed
+import axiosPublic from "../components/axiosPublic"; // Adjust the path if needed
 
 const Register = () => {
   const { createNewUser, setUser, createUserWithGoogle } = useContext(AuthContext);
