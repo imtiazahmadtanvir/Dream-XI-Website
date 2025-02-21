@@ -7,6 +7,7 @@ import Register from "../Authentication/Register";
 import ForgotPassword from "../Authentication/ForgotPassword";
 import PrivateRoute from "./PrivateRoute";
 import Profile from "../pages/Profile";
+import TaskBoard from "../pages/TaskBoard";
 // import AllArtifactsPage from "../pages/AllArtifactsPage";
 // import MyArtifact from "../pages/MyArtifact";
 // import LikedArtifact from "../pages/LikedArtifact";
@@ -29,15 +30,15 @@ const router = createBrowserRouter([
     ),
     errorElement: <Errorpage />,
   },
-  // {
-  //   path: "/add-artifacts",
-  //   element: (
-  //     <PrivateRoute>
-  //       <AddArtifact />
-  //     </PrivateRoute>
-  //   ),
-  //   errorElement: <Errorpage />,
-  // },
+  {
+    path: "/task",
+    element: (
+      <PrivateRoute>
+        <TaskBoard></TaskBoard>
+      </PrivateRoute>
+    ),
+    errorElement: <Errorpage />,
+  },
   // {
   //   path: "/artifact/:id",
   //   element: (

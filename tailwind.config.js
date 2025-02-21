@@ -22,7 +22,7 @@ export default {
       },
     },
   },
-  darkMode: ['class', '[theme="dark"]'],
+  darkMode: "class",
   plugins: [
     require('daisyui'), 
   ],

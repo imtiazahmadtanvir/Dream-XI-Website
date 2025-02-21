@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import Home from "../components/Home";
 import Navbar from "../components/Navbar";
 
 
@@ -7,11 +8,14 @@ const HomeLayout = () => {
 
   return (
    <div>
-    <header></header>
-       
-        <Navbar></Navbar>
+    <header className="mb-15">
+    <Navbar></Navbar>
 
+    </header>
+       <div className="mt-10">
+       <Home></Home>
 
+       </div>
 
     <footer>
     <Footer></Footer>

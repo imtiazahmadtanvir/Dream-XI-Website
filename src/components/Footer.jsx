@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="mb-5 md:mb-0 sm:justify-center">
               <a href="https://flowbite.com/" className="flex items-center sm:justify-center sm:text-center w-full mx-auto">
                   <img src={logo} className="h-8 me-3 rounded-lg" alt="FlowBite Logo" />
-                  <span className="self-center text-xl font-semibold whitespace-nowrap text-gray-800 dark:text-white">Product Hunt Website</span>
+                  <span className="self-center text-xl font-semibold whitespace-nowrap text-gray-800 dark:text-white">Task Mangement Website</span>
               </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -16,7 +16,7 @@ const Footer = () => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="https://flowbite.com/" className="hover:underline">Product Hunt</a>
+                          <a href="https://flowbite.com/" className="hover:underline">Task Mangement</a>
                       </li>
                       <li>
                           <a href="https://tailwindcss.com/" className="hover:underline">Email</a>
@@ -50,7 +50,7 @@ const Footer = () => {
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div className="flex flex-col pb sm:items-center sm:justify-between sm:mx-auto text-center ">
           <div className="pb-4">
-              <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" className="hover:underline">Product Hunt Ltd. </a>All Rights Reserved.
+              <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" className="hover:underline">Task Mangement Web. </a>All Rights Reserved.
               </span>
           </div>
           <div className="flex mt-4 justify-center sm:mt-0 mx-auto">

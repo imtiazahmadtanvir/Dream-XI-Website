@@ -125,10 +125,12 @@ const Register = () => {
         setUser(result.user);
         // Save user data to backend
         const userData = { name, email, photo, role };
+        navigate("/");
+
         axiosPublic.post('/users', userData)
           .then((response) => {
             console.log(response);
-            navigate("/");
+            // navigate("/");
           })
           .catch((error) => {
             setError((prevError) => ({
