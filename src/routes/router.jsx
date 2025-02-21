@@ -20,12 +20,15 @@ const router = createBrowserRouter([
     element: <HomeLayout />,
     errorElement: <Errorpage />,
   },
-  // {
-  //   path: "/all-artifacts",
-  //   element: <AllArtifactsPage />,
-  //   loader:()=>fetch(`https://historical-artifacts-tracker-server-blue.vercel.app/artifacts`),
-  //   errorElement: <Errorpage />,
-  // },
+  {
+    path: "/profile",
+    element: (
+      <PrivateRoute>
+        <Profile />
+      </PrivateRoute>
+    ),
+    errorElement: <Errorpage />,
+  },
   // {
   //   path: "/add-artifacts",
   //   element: (
@@ -72,15 +75,15 @@ const router = createBrowserRouter([
     
   //   errorElement: <Errorpage />,
   // },
-  {
-    path: "/profile",
-    element: (
-      <PrivateRoute>
-        <Profile />
-      </PrivateRoute>
-    ),
-    errorElement: <Errorpage />,
-  },
+  // {
+  //   path: "/profile",
+  //   element: (
+  //     <PrivateRoute>
+  //       <Profile />
+  //     </PrivateRoute>
+  //   ),
+  //   errorElement: <Errorpage />,
+  // },
   {
     path: "/auth",
     element: <AuthLayout />,

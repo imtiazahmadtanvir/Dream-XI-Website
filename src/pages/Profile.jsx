@@ -57,7 +57,10 @@ const Profile = () => {
       </div>
 
       {/* Footer Fixed at Bottom */}
-      <Footer className="bottom-0 left-0 w-full z-50 bg-base-200" />
+      {/* <Footer className="bottom-0 left-0 w-full z-50 bg-base-200" /> */}
+      <footer><Footer></Footer></footer>
+
+    
     </div>
   );
 };

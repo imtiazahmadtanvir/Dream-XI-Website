@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 
@@ -6,8 +7,17 @@ const HomeLayout = () => {
 
   return (
    <div>
-    <Navbar></Navbar>
+    <header></header>
+       
+        <Navbar></Navbar>
+
+
+
+    <footer>
+    <Footer></Footer>
+   </footer>
    </div>
+
   );
 };
 

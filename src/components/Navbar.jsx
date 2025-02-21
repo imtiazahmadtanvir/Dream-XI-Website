@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="flex items-center ml-3">
           <img src={logo} alt="Logo" className="w-8 h-8 mr-2 rounded-lg" />
           <Link to="/" className="text-xl font-bold">
-            Historical Artifacts Tracker
+          Task Management System 
           </Link>
         </div>
 
@@ -24,22 +24,8 @@ const Navbar = () => {
           <Link to="/" className="btn btn-ghost hover:bg-gray-300">
             Home
           </Link>
-          <Link to="/all-artifacts" className="btn btn-ghost hover:bg-gray-300">
-            All Artifacts
-          </Link>
-          {user && (
-            <>
-              <Link to="/add-artifacts" className="btn btn-ghost hover:bg-gray-300">
-                Add Artifact
-              </Link>
-              <Link to="/liked-artifacts" className="btn btn-ghost hover:bg-gray-300">
-                Liked Artifacts
-              </Link>
-              <Link to="/my-artifacts" className="btn btn-ghost hover:bg-gray-300">
-                My Artifacts
-              </Link>
-            </>
-          )}
+
+
         </div>
 
         {/* User Profile or Login/Register */}
@@ -65,9 +51,7 @@ const Navbar = () => {
               <Link to="/auth/login" className="bg-yellow-400 px-4 py-2 rounded-lg text-gray-800 hover:bg-yellow-500">
                 Login
               </Link>
-              <Link to="/auth/register" className="bg-yellow-400 px-4 py-2 rounded-lg text-gray-800 hover:bg-yellow-500">
-                Register
-              </Link>
+
             </>
           )}
         </div>
@@ -91,20 +75,9 @@ const Navbar = () => {
             <Link to="/" className="btn btn-ghost w-full text-left hover:bg-gray-300">
               Home
             </Link>
-            <Link to="/all-artifacts" className="btn btn-ghost w-full text-left hover:bg-gray-300">
-              All Artifacts
-            </Link>
+
             {user && (
               <>
-                <Link to="/add-artifacts" className="btn btn-ghost w-full text-left hover:bg-gray-300">
-                  Add Artifact
-                </Link>
-                <Link to="/liked-artifacts" className="btn btn-ghost w-full text-left hover:bg-gray-300">
-                  Liked Artifacts
-                </Link>
-                <Link to="/my-artifacts" className="btn btn-ghost w-full text-left hover:bg-gray-300">
-                  My Artifacts
-                </Link>
                 <Link to="/profile" className="btn btn-ghost w-full text-left  hover:bg-gray-300">
                   Profile
                 </Link>
@@ -120,9 +93,6 @@ const Navbar = () => {
               <>
                 <Link to="/auth/login" className="btn btn-primary w-full bg-yellow-400 hover:bg-yellow-500">
                   Login
-                </Link>
-                <Link to="/auth/register" className="btn btn-primary w-full bg-yellow-400 hover:bg-yellow-500">
-                  Register
                 </Link>
               </>
             )}
