@@ -7,13 +7,8 @@ import Register from "../Authentication/Register";
 import ForgotPassword from "../Authentication/ForgotPassword";
 import PrivateRoute from "./PrivateRoute";
 import Profile from "../pages/Profile";
-import TaskBoard from "../pages/TaskBoard";
-// import AllArtifactsPage from "../pages/AllArtifactsPage";
-// import MyArtifact from "../pages/MyArtifact";
-// import LikedArtifact from "../pages/LikedArtifact";
-// import AddArtifact from "../pages/AddArtifact";
-// import ArtifactDetails from "../pages/ArtifactDetails";
-// import UpdateArtifact from "../pages/UpdateArtifact";
+import AddTask from "../pages/AddTask";
+import TaskManage from "../pages/TaskManage";
 
 const router = createBrowserRouter([
   {
@@ -31,23 +26,23 @@ const router = createBrowserRouter([
     errorElement: <Errorpage />,
   },
   {
-    path: "/task",
+    path: "/add-Task",
     element: (
       <PrivateRoute>
-        <TaskBoard></TaskBoard>
+        <AddTask></AddTask>
       </PrivateRoute>
     ),
     errorElement: <Errorpage />,
   },
-  // {
-  //   path: "/artifact/:id",
-  //   element: (
-  //     <PrivateRoute>
-  //       <ArtifactDetails />
-  //     </PrivateRoute>
-  //   ),
-  //   errorElement: <Errorpage />,
-  // },
+  {
+    path: "/task-manage",
+    element: (
+      <PrivateRoute>
+        <TaskManage></TaskManage>
+      </PrivateRoute>
+    ),
+    errorElement: <Errorpage />,
+  },
   // {
   //   path: "/liked-artifacts",
   //   element: (

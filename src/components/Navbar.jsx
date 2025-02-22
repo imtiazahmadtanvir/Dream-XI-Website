@@ -41,8 +41,11 @@ const Navbar = () => {
           <Link to="/" className="btn btn-ghost hover:bg-gray-300 dark:hover:bg-gray-700">
             Home
           </Link>
-          <Link to="/task" className="btn btn-ghost hover:bg-gray-300 dark:hover:bg-gray-700">
-            Taskboard
+          <Link to="/add-task" className="btn btn-ghost hover:bg-gray-300 dark:hover:bg-gray-700">
+            Add Task
+          </Link>
+          <Link to="/task-manage" className="btn btn-ghost hover:bg-gray-300 dark:hover:bg-gray-700">
+            Task Manage
           </Link>
         </div>
 
@@ -118,8 +121,11 @@ const Navbar = () => {
 
             {user ? (
               <>
-                <Link to="//task" className="btn btn-ghost w-full text-left hover:bg-gray-300 dark:hover:bg-gray-700">
-                  Taskboard
+                <Link to="/add-task" className="btn btn-ghost w-full text-left hover:bg-gray-300 dark:hover:bg-gray-700">
+                  Add Task
+                </Link>
+                <Link to="/task-manage" className="btn btn-ghost w-full text-left hover:bg-gray-300 dark:hover:bg-gray-700">
+                  Task Manage
                 </Link>
                 <Link to="/profile" className="btn btn-ghost w-full text-left hover:bg-gray-300 dark:hover:bg-gray-700">
                   Profile
